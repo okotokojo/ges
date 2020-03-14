@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.tellnum {
+  text-align: center;
+}
+body {
+  color: #2c3e50;
+  background: #ecf0f1;
+  padding: 0 1em 1em;
+}
+
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 .5em;
+  font-weight: normal;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.row {
+  display: -webkit-box;
+  display: flex;
+}
+.row .col {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: #1a252f;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+.tab-close {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+
+input:checked + .tab-label {
+  background: #1a252f;
+}
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 1px solid #ddd;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 1px solid #ddd;
+}
+.panel-body {
+    padding: 15px;
+}
+.panel-body {
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="col">
+    <div class="tabs">
+      <div class="tab">
+        <input type="radio" id="rd1" name="rd">
+        <label class="tab-label" for="rd1">Symtoms</label>
+        <div class="tab-content">
+          <div class="panel-body">
+					
+					
+					<p><span class="bodytext">The Center for Disease Control (CDC) believes at this time that symptoms may appear 2-14 days after exposure.</span></p>
+					
+					<p><span class="bodytext">Symptoms may be flu-like, ranging from mild to serious, and include:</span></p>
+					
+                    <ul style="padding-top: 12px;">
+	
+			
+				<li>Fever</li>
+				<li>Cough</li>
+                <li>Difficulty breathing</li>
+		
+			</ul>
+	
+	
+		
+                </div>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd2" name="rd">
+        <label class="tab-label" for="rd2">Transmission</label>
+        <div class="tab-content">
+         <div class="panel-body">
+                   
+					<p><span class="bodytext">While COVID-2019 is believed to have originated from animals, the virus is thought to spread mainly from person-to-person:</span></p>
+					
+					
+	
+	<ul>
+	
+		<li>Between people who are in close contact with one another (within about 6 feet).</li>
+		
+
+				
+						<li style="margin-top: 4px;">Via respiratory droplets produced when an infected person coughs or sneezes, and landing in the mouths or noses of people who are nearby or possibly inhaled into the lungs.</li>
+
+	</ul>
+					
+					<p><span class="bodytext">It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads.</span></p>
+					
+					<p><span class="bodytext">People are thought to be most contagious when they are most symptomatic (the sickest). Some spread might be possible before people show symptoms; there have been reports of this with this new coronavirus, but this is not thought to be the main way the virus spreads.</span></p>
+					
+					
+                </div>
+        </div>
+      </div>
+       <div class="tab">
+        <input type="radio" id="rd4" name="rd">
+        <label class="tab-label" for="rd4">Prevention</label>
+        <div class="tab-content">
+          <div class="panel-body">
+                   
+					<p><span class="bodytext">There is no vaccine to prevent this virus, and the advise is that the best way to prevent infection is to avoid being exposed to this virus.</span></p>
+					
+					<p><span class="bodytext">Here are everyday actions to help prevent the spread of respiratory viruses in general, such as colds and the flu:</span></p>
+	
+	<ul>
+	
+		<li>Wash your hands often with soap and water for at least 20 seconds. If soap and water are not available, use an alcohol-based hand sanitizer</li>
+		
+
+				
+						<li style="margin-top: 4px;">Avoid touching your eyes, nose and mouth with unwashed hands</li>
+						<li style="margin-top: 4px;">Don’t share food, beverages or smoking devices with others</li>
+						<li style="padding-top: 4px;">Avoid close contact with people who are sick</li>
+		<li style="padding-top: 4px;">Avoid shaking hands—try a fist bump instead</li>
+						<li style="margin-top: 4px;">Stay home when sick</li>
+						<li style="margin-top: 4px;">Clean and disinfect frequently touched objects and surfaces</li>
+						<li style="margin-top: 4px;">Cough or sneeze into your elbow or sleeve or cover coughs or sneezes with a tissue and throw the tissue directly into the trash</li>
+				<li style="margin-top: 4px;">If you experience symptoms of respiratory illness, call the Emergency numbers <table>
+ <tr onclick="window.open('tel:0509497700');">
+  <td><button class="button">050 949 7700</button></td>
+ </tr> </table>
+ <table>
+ <tr onclick="window.open('tel:0558439868');">
+  <td><button class="button">055 843 9868</button></td>
+ </tr></table></li>
+				
+
+	</ul>
+					
+					
+                </div>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd5" name="rd">
+        <label class="tab-label" for="rd5">Treatment</label>
+        <div class="tab-content">
+          <div class="panel-body">
+                   
+					<p><span class="bodytext">People infected with COVID-19 should receive supportive care to help relieve symptoms. Currently, there is no specific antiviral treatment recommended for COVID-19 infection. (source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/prevention-treatment.html" target="_blank" class="a_class_tlink">CDC</a>)</span></p>
+				
+	
+			
+					
+                </div>
+        </div>
+      </div>
+      
+      <div class="tab">
+        <input type="radio" id="rd6" name="rd">
+        <label class="tab-label" for="rd6">Recommendations for people with respiratory symptoms</label>
+        <div class="tab-content">
+         <div class="panel-body">
+                   
+					<p><span class="bodytext"><strong>Individuals should seek medical care if they have symptoms of fever, cough and/or difficulty breathing.</strong></span></p>
+					
+					<p><span class="bodytext">Before going to a healthcare facility, call ahead. Tell them about any recent travel and symptoms. They may want to provide specific instructions about how to come to the facility and where to go upon arrival to minimize the risk of exposing others, or depending on your symptoms, may give self-care advice that you can follow at home.</span></p>
+					
+					<ul>
+					
+					<li>All should call the 24-hour emergency number <table>
+ <tr onclick="window.open('tel:0509497700');">
+  <td><button class="button">050 949 7700</button></td>
+ </tr> </table>
+ <table>
+ <tr onclick="window.open('tel:0558439868');">
+  <td><button class="button">055 843 9868</button></td>
+ </tr></table></li>
+					
+						
+					</ul>
+				
+	<p><span class="bodytext">On the way to a healthcare facility:</span></p>
+					
+					<ul>
+					<li style="margin-top: 4px;">Avoid contact with others as much as possible</li>
+					<li style="margin-top: 4px;">Do not take public transportation to the healthcare facilities</li>
+						<li style="margin-top: 4px;">Cover the mouth and nose with a tissue or sleeve (not the hands) when coughing or sneezing</li>
+						<li style="margin-top: 4px;">If available, wear a facemask</li>
+					
+					
+					</ul>
+			
+					
+                </div>
+        </div>
+      </div>
+      
+      <div class="tab">
+        <input type="radio" id="rd7" name="rd">
+        <label class="tab-label" for="rd7">Self-Isolation Instructions</label>
+        <div class="tab-content">
+         <div class="panel-body">
+					
+					
+					<p><span class="bodytext"><strong>Self-isolation</strong> serves to temporarily separate people who have been in an area of public health concern to help protect their health and that of their community. Day zero of the 14 day isolation period is the day you leave a restricted location. </span></p>
+					
+					<p><span class="bodytext">Individuals required to self-isolate:</span></p>
+					
+					<ul>
+					
+					<li>May not return to public space, work, activities or events until 14 days have passed. People needing assistance finding accommodations for self-isolation should contact <table>
+ <tr onclick="window.open('tel:0509497700');">
+  <td><button class="button">050 949 7700</button></td>
+ </tr> </table>
+ <table>
+ <tr onclick="window.open('tel:0558439868');">
+  <td><button class="button">055 843 9868</button></td>
+ </tr></table></li>
+						<li>Stay home except to get medical care and call ahead before doing so.</li>
+						<li>Report their health status daily to health officials.</li>
+						<li>Separate themselves from others who also share their residence.</li>
+						
+						<li><strong>Monitor their temperature</strong> twice a day for fever. Fever is defined as ≥100.4F or 38C.</li>
+						<li><strong>If a cough, difficulty breathing or fever develop</strong> during the 14-day period post-travel do the following:</li>
+						
+						<ul>
+						<li><strong>Avoid contact with others.</strong> Follow precautions to prevent the spread of the disease.</li>
+							<li>Call ahead, before going to a healthcare facility. Tell them about your recent travel and your symptoms. They may want to provide specific instructions about how to come to the facility and where to go once you arrive to minimize the risk of exposing others, or they may give instructions for self-care at home.</li>
+						
+						
+						</ul>
+					</ul>
+	
+	<p><span class="bodytext"><strong>If returning from official or university-sponsored travel (students, faulty and staff),</strong> University Health Services or HealthPoint Occupational Health staff will reach out to you to review guidelines and offer support, if needed.</span></p>
+					
+					<p><span class="bodytext"><strong>If arriving to the U.S. from personal travel</strong></span></p>
+	
+						
+
+	
+	
+		
+                </div>
+        </div>
+      </div>
+      
+      <div class="tab">
+        <input type="radio" id="rd8" name="rd">
+        <label class="tab-label" for="rd8">24-hour Emergency Contact</label>
+        <div class="tab-content">
+         <table>
+ <tr onclick="window.open('tel:0509497700');">
+  <td><button class="button">050 949 7700</button></td>
+ </tr> </table>
+ <table>
+ <tr onclick="window.open('tel:0558439868');">
+  <td><button class="button">055 843 9868</button></td>
+ </tr></table>
+        </div>
+      </div>
+      
+    
+      
+      <div class="tab">
+        <input type="radio" id="rd9" name="rd">
+        <label class="tab-label" for="rd9">Keep Call</label>
+        <div class="tab-content">
+         Everything is under control
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd3" name="rd">
+        <label for="rd3" class="tab-close">Close others &times;</label>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</body>
+</html>
